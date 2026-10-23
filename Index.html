@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Quarter 2 Seatwork - Glee Club</title>
+     <style>
+        body {
+            background-color: #f2eee8;
+            color: #3d3833;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ded5c9;
+            padding: 25px;
+        }
+
+
+        h1 {
+            color: #4a4038;
+            font-size: 28px;
+        }
+
+        header p {
+            color: #6b6259;
+        }
+
+        main {
+            background-color: #ffffff;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            border: 1px solid #d4c9bb;
+            border-radius: 8px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #c9c0b5;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #8c7b6c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #f2eee8;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #ded5c9;
+            color: #4a4038;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+        <header>
+        <div class="reactor"></div>
+        <h1>Glee CLub</h1>
+        <p>This Club is very fun and amazing!</p>
+
+        </header>
+
+        <main>
+
+            <form>
+                <input type="text" id="first_name" placeholder="Enter your First Name"><br>
+                <input type="text" id="last_name" placeholder="Enter your Last Name"><br>
+                <input type="button" py-click="candidate_checker" value="Enter">
+                </form>
+                <div id="result"> </div>
+        </main>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
